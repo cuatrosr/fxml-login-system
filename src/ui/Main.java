@@ -26,7 +26,7 @@ public class Main extends Application {
         Parent root = fxmlLoader.load();
         
         Scene scene = new Scene(root);
-        
+        scene.getStylesheets().add(Main.class.getResource("/css/Classroom.css").toExternalForm());
         stage.setTitle("Classroom");
         stage.setResizable(false);
         stage.setScene(scene);

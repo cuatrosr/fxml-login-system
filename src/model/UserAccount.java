@@ -23,6 +23,10 @@ public class UserAccount {
     public String getUsername() {
         return username;
     }
+    
+    public String getPassword(){
+        return password;
+    }
 
     public String getProfilePath() {
         return profilePath;

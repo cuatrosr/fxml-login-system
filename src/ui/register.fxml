@@ -5,6 +5,7 @@
 <?import javafx.scene.control.ChoiceBox?>
 <?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.RadioButton?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.control.ToggleGroup?>
@@ -29,7 +30,6 @@
          </font>
       </Label>
       <TextField fx:id="usernameFieldRegister" layoutX="156.0" layoutY="76.0" />
-      <TextField fx:id="passwordFieldRegister" layoutX="156.0" layoutY="106.0" />
       <Button layoutX="84.0" layoutY="336.0" mnemonicParsing="false" onAction="#loginStage" prefHeight="25.0" prefWidth="111.0" text="Sign In" />
       <Button layoutX="213.0" layoutY="336.0" mnemonicParsing="false" onAction="#createAccountButton" prefHeight="25.0" prefWidth="111.0" text="Create account" />
       <Label layoutX="138.0" layoutY="43.0" text="Create Your account">
@@ -78,15 +78,15 @@
       </RadioButton>
       <RadioButton fx:id="femaleGenderRegister" layoutX="214.0" layoutY="171.0" mnemonicParsing="false" text="Female" toggleGroup="$genderChoice">
          <font>
-            <Font name="System Italic" size="11.0" />
+            <Font name="System Italic" size="12.0" />
          </font>
       </RadioButton>
       <RadioButton fx:id="otherGenderRegister" layoutX="281.0" layoutY="171.0" mnemonicParsing="false" text="Other" toggleGroup="$genderChoice">
          <font>
-            <Font name="System Italic" size="11.0" />
+            <Font name="System Italic" size="12.0" />
          </font>
       </RadioButton>
-      <Button layoutX="327.0" layoutY="136.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="69.0" text="Browse" />
+      <Button layoutX="327.0" layoutY="136.0" mnemonicParsing="false" onAction="#browseProfilePhoto" prefHeight="25.0" prefWidth="69.0" text="Browse" />
       <Label layoutX="90.0" layoutY="270.0" text="Birthday:">
          <font>
             <Font name="System Italic" size="15.0" />
@@ -99,5 +99,6 @@
       </Label>
       <DatePicker fx:id="birthdayRegister" layoutX="154.0" layoutY="268.0" />
       <ChoiceBox fx:id="fvBrowserRegister" layoutX="155.0" layoutY="297.0" prefWidth="150.0" />
+      <PasswordField fx:id="passwordFieldRegister" layoutX="156.0" layoutY="106.0" />
    </children>
 </Pane>

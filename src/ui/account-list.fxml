@@ -15,21 +15,24 @@
             <Font name="System Bold Italic" size="20.0" />
          </font>
       </Label>
-      <Label layoutX="343.0" layoutY="25.0" text="Seyerman">
+      <Label fx:id="userActive" layoutX="343.0" layoutY="25.0" text="Seyerman">
          <font>
             <Font name="System Italic" size="15.0" />
          </font>
       </Label>
       <Button layoutX="507.0" layoutY="23.0" mnemonicParsing="false" onAction="#loginStage" prefHeight="25.0" prefWidth="69.0" text="Log out" />
-      <TableView layoutX="24.0" layoutY="100.0" prefHeight="274.0" prefWidth="552.0">
+      <TableView fx:id="tvView" editable="true" layoutX="24.0" layoutY="100.0" minHeight="280.0" minWidth="500.0">
         <columns>
-          <TableColumn prefWidth="123.0" text="Username" />
-          <TableColumn prefWidth="110.0" text="Gender" />
-            <TableColumn prefWidth="104.0" text="Career" />
-            <TableColumn prefWidth="109.0" text="Birthday" />
-            <TableColumn prefWidth="105.0" text="Browser" />
+          <TableColumn fx:id="tcUsername" prefWidth="123.0" text="Username" />
+          <TableColumn fx:id="tcGender" prefWidth="110.0" text="Gender" />
+            <TableColumn fx:id="tcCareer" prefWidth="104.0" text="Career" />
+            <TableColumn fx:id="tcBirthday" prefWidth="109.0" text="Birthday" />
+            <TableColumn fx:id="tcBrowser" prefWidth="105.0" text="Browser" />
         </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
       </TableView>
-      <ImageView fitHeight="43.0" fitWidth="52.0" layoutX="435.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="imageActive" fitHeight="43.0" fitWidth="52.0" layoutX="435.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
    </children>
 </Pane>
