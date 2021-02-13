@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="fxml-login-system">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/dist/fxml-login-system.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
